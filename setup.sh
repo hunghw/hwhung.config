@@ -6,7 +6,7 @@ sudo apt-get install vim tmux git
 
 # Download git-completion.bash from github
 # https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks
- wget -O ~/git-completion.bash https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
+wget -O ~/git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
  
  # Git Configureration
 git config --global user.name "Howard Hung"
