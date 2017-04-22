@@ -1,3 +1,10 @@
+# Alias 
+alias h='history '
+alias ls='ls --color=auto '
+alias ll='ls -hl'
+alias .='echo $cwd'
+alias ..='set dot=$cwd; cd ..'
+
 # Auto-Completion
 source ~/git-completion.bash
 
