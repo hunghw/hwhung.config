@@ -158,4 +158,5 @@ nnoremap <C-L> :nohl<CR><C-L>
  
 "------------------------------------------------------------
 set showmode
-set bg=dark
+set background=dark
+set ic
