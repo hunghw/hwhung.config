@@ -12,7 +12,7 @@ source ~/git-completion.bash
 bind '"\x1b\x5b\x41":history-search-backward'
 bind '"\x1b\x5b\x42":history-search-forward'
 
-# prompt
+# prompt http://ezprompt.net/
 # get current branch in git repo
 function parse_git_branch() {
 	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
@@ -60,4 +60,4 @@ function parse_git_dirty {
 	fi
 }
 
-export PS1="\[\e[31m\]\A\[\e[m\]\[\e[33m\]\u\[\e[m\]\[\e[35m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\] \[\e[36m\]\w\[\e[m\]\`parse_git_branch\` \\$ "
+export PS1="\`if [ \$? = 0 ]; then echo \[\e[32m\]\:\)\[\e[0m\]; else echo \[\e[31m\]\:\(\[\e[0m\]; fi\`\[\e[33m\]\A\[\e[m\]\[\e[1;35m\]\u\[\e[m\]\[\e[1;34m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]:\[\e[1;36m\]\w\[\e[m\]\[\e[33m\]\`parse_git_branch\`\[\e[m\]\n\\$ "
