@@ -14,3 +14,6 @@ git config --global user.email hwhung0111@gmail.com
 git config --global core.editor $EDITOR
 git config --global core.pager less
  
+# Vim-plug install
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
