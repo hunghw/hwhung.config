@@ -9,8 +9,8 @@ sudo apt-get install vim tmux git curl
 wget -O ~/git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
  
  # Git Configureration
-git config --global user.name "Howard Hung"
-git config --global user.email hwhung0111@gmail.com
+git config --global user.name "Hung-Wei Hung"
+git config --global user.email hung2wei@gmail.com
 git config --global core.editor $EDITOR
 git config --global core.pager less
  
